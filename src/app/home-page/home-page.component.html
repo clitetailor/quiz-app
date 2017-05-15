@@ -1,11 +1,8 @@
-<div class="outer-wrapper">
-  <div class="div1">
+<md-menu #appMenu="mdMenu">
+  <button md-menu-item> Settings </button>
+  <button md-menu-item> Help </button>
+</md-menu>
 
-  </div>
-  <div class="div2">
-
-  </div>
-  <div class="div3">
-
-  </div>
-</div>
+<button md-icon-button [mdMenuTriggerFor]="appMenu">
+   <md-icon>more_vert</md-icon>
+</button>
