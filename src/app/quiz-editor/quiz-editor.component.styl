@@ -43,8 +43,16 @@
 
     overflow-y auto
 
+    &::-webkit-scrollbar-track
+      background alpha(#fff, 0.2)
+
+
+    &::-webkit-scrollbar-thumb
+      background #ddd
+
     .paper
       display block
+      margin auto
 
       max-width 600px
 
@@ -94,6 +102,13 @@
     background white
     overflow-y auto
     overflow-x hidden
+
+    &::-webkit-scrollbar-track
+      background alpha(#000, 0.1)
+
+
+    &::-webkit-scrollbar-thumb
+      background #aaa
 
     textarea, input
       width 100%
