@@ -25,6 +25,7 @@
   align-items stretch
 
 .outer-wrapper
+  position relative
   width 100%
   height 100%
 
@@ -35,6 +36,15 @@
   overflow-x hidden
 
   background cadetblue
+
+  .timer
+    position absolute
+    padding 8px
+
+    font-family Lato
+
+    border-radius 3px
+    background white
 
   .paper
     margin 0 auto
@@ -69,7 +79,7 @@
         &:hover
           .label
             color white
-            background-color dodgerblue
+            background-color orange
 
         .selected
           color white

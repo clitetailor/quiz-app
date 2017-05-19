@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, NgZone } from '@angular/core';
 
 @Component({
   selector: 'app-quiz-page',
@@ -7,9 +7,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuizPageComponent implements OnInit {
 
-  constructor() { }
+  constructor(private ngZone: NgZone) { }
 
   ngOnInit() {
+    setInterval(() => {
+      this.ngZone.run(() => {
+        this.timming = this.timming - 1
+      })
+    }, 1000);
+  }
+
+  timming = 3601;
+
+  get timmingHours() {
+    return Math.floor(this.timming / 3600);
+  }
+
+  get timmingMinutes() {
+    return Math.floor(this.timming % 3600 / 60);
+  }
+
+  get timmingSeconds() {
+    return this.timming % 60;
   }
 
   questions = [{
