@@ -12,4 +12,25 @@ export class QuizPageComponent implements OnInit {
   ngOnInit() {
   }
 
+  questions = [{
+      content: "",
+      answers: Array.from({ length: 4 }, (v, k) => {
+        return {
+          content: "",
+          checked: false
+        }
+      })
+  }, {
+      content: "",
+      answers: Array.from({ length: 4 }, (v, k) => {
+        return {
+          content: "",
+          checked: false
+        }
+      })
+  }]
+
+  chooseAnswer(questionId, answerId) {
+    this.questions[questionId].answers[answerId].checked = !this.questions[questionId].answers[answerId].checked;
+  }
 }
