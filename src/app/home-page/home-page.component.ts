@@ -21,7 +21,19 @@ export class HomePageComponent implements OnInit {
 
   activeTab = 0;
 
-  quizs = [{
+  quizzes = [{
+
+  }, {
+
+  }, {
+
+  }, {
+
+  }, {
+
+  }, {
+
+  }, {
 
   }]
 

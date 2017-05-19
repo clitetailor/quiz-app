@@ -21,7 +21,10 @@
     </nav>
 
     <div class="quiz-list">
-      <div class="quiz" *ngFor="let quiz of quizs">
+      <div
+      class="quiz"
+      *ngFor="let quiz of quizzes; let i = index"
+      [style.animation-delay.s]="i * 0.2 + 1">
         <div class="line">
           <h3 class="title">Quiz about chemistry</h3>
         </div>
