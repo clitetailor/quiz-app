@@ -12,4 +12,10 @@ export class QuizInfoComponent implements OnInit {
   ngOnInit() {
   }
 
+  quiz = {
+
+  }
+
+  // bla, bla, cái gì đó ở đay
+
 }
