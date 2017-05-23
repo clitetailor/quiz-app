@@ -16,6 +16,4 @@ export class QuizInfoComponent implements OnInit {
 
   }
 
-  // bla, bla, cái gì đó ở đay
-
 }

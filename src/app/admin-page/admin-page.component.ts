@@ -69,4 +69,6 @@ export class AdminPageComponent implements OnInit {
   // Nếu thay đổi phức tạp không tự merge được thì ông sẽ phải sửa conflict ở trong file bị conflict sau đó commit lại lần nữa rồi mới push lên được
 
   // Ví dụ nhé
+
+  // Đây là phần của ông viết
 }
