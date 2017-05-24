@@ -18,8 +18,7 @@ import { LoginComponent } from './login/login.component';
 import { UserComponent } from './user/user.component';
 
 const appRoutes = [
-  // { path: '', component: HomePageComponent },
-  { path: '', component: LoginComponent },
+  { path: '', component: HomePageComponent },
   { path: 'quiz-info', component: QuizInfoComponent },
   { path: 'quiz', component: QuizPageComponent },
   { path: 'editor', component: QuizEditorComponent },
