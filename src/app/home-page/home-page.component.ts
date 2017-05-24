@@ -12,4 +12,34 @@ export class HomePageComponent implements OnInit {
   ngOnInit() {
   }
 
+  tabs = [
+    "Lastest",
+    "Trend",
+    "Math",
+    "Chemistry"
+  ]
+
+  activeTab = 0;
+
+  quizzes = [{
+
+  }, {
+
+  }, {
+
+  }, {
+
+  }, {
+
+  }, {
+
+  }, {
+
+  }]
+
+  switchTab(i) {
+    if (this.activeTab !== i) {
+      this.activeTab = i;
+    }
+  }
 }
