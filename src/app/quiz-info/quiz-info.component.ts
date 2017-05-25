@@ -16,4 +16,15 @@ export class QuizInfoComponent implements OnInit {
 
   }
 
+  users = [{
+    username: "Clite Tailor",
+    points: 80
+  }, {
+    username: "Anna",
+    points: 70
+  }]
+
+  start() {
+
+  }
 }
