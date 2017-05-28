@@ -61,11 +61,7 @@ const appRoutes = [
     MaterialModule,
     BrowserAnimationsModule
   ],
-<<<<<<< HEAD
   providers: [ReportService],
-=======
-  providers: [],
->>>>>>> 4c4d8c214d15e82746f26e12cd9c7d30849ff41e
   bootstrap: [AppComponent]
 })
 export class AppModule { }
