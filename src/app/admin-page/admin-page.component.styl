@@ -1,48 +1,47 @@
+/*
+*::-webkit-scrollbar-track
+  background alpha(#000, 0.1)
+
+
 *::-webkit-scrollbar-thumb
-    background white
+  background #aaa
+*/
 
 .outer-wrapper
-    display flex
-    flex-flow column nowrap
-    align-items stretch
+  display flex
 
-    width 100%
-    height 100%
+  width 100%
+  height 100%
+  background #eee
 
+  font-family Lato
+
+  .members
+    flex 0 0 auto
     padding 20px
 
-    background #eee
+    width 50%
+    overflow-y auto
 
-    .members
-        display flex
-        flex-flow column nowrap
-        align-items center
+    border-right 1px solid #ddd
 
-        flex 0 0 auto
-        height 50%
+    .member
+      padding 20px
+      margin 30px auto
 
-        overflow-y auto
+      background white
+      border-radius 3px
 
-        .member
-            width 800px
-            padding 20px
-            margin 5px
+  .editors
+    flex 0 0 auto
+    padding 20px
 
-            background white
-            
-    .editors
-        display flex
-        flex-flow column nowrap
-        align-items center
+    width 50%
+    overflow-y auto
 
-        flex 0 0 auto
-        height 50%
+    .editor
+      padding 20px
+      margin 30px auto
 
-        overflow-y auto
-
-        .editor
-            width 800px
-            padding 20px
-            margin 5px
-
-            background white
+      background white
+      border-radius 3px
