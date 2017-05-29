@@ -11,5 +11,6 @@ export class QuizResultComponent implements OnInit {
 
   ngOnInit() {
   }
+  
 
 }
