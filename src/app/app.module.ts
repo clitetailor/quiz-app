@@ -6,6 +6,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { MaterialModule } from '@angular/material'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReportService } from './services/report.service';
+import { QuizService } from './services/quiz.service';
 
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
@@ -20,6 +21,10 @@ import { UserComponent } from './user/user.component';
 import { ReportDetailComponent } from './report-detail/report-detail.component';
 import { ReportEditComponent } from './report-edit/report-edit.component';
 import { ReportAddComponent } from './report-add/report-add.component';
+import { QuizAddComponent } from './quiz-add/quiz-add.component';
+import { QuizEditComponent } from './quiz-edit/quiz-edit.component';
+import { QuizManagerComponent } from './quiz-manager/quiz-manager.component';
+import { QuizDetailComponent } from './quiz-detail/quiz-detail.component';
 
 const appRoutes = [
   { path: '', component: HomePageComponent },
@@ -33,7 +38,11 @@ const appRoutes = [
   { path: 'report-add', component:ReportAddComponent},
   { path: 'login', component: LoginComponent },
   { path: 'admin', component: AdminPageComponent },
-  { path: 'user', component: UserComponent }
+  { path: 'user', component: UserComponent },
+  { path: 'quiz-add', component: QuizAddComponent },
+  { path: 'quiz-edit', component: QuizEditComponent },
+  { path: 'quiz-manager', component: QuizManagerComponent },
+  { path: 'quiz-detail', component: QuizDetailComponent }
 ]
 
 @NgModule({
@@ -51,7 +60,11 @@ const appRoutes = [
     ReportDetailComponent,
     ReportEditComponent,
     ReportAddComponent,
-    UserComponent
+    UserComponent,
+    QuizAddComponent,
+    QuizEditComponent,
+    QuizManagerComponent,
+    QuizDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -61,7 +74,7 @@ const appRoutes = [
     MaterialModule,
     BrowserAnimationsModule
   ],
-  providers: [ReportService],
+  providers: [ReportService, QuizService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

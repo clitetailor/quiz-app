@@ -1,0 +1,39 @@
+<div class="outer-wrapper">
+    <div class="row">
+        <div class="col-md-12">
+            <div align="right" class="col-md-4">
+                <input type="text" name="keyword" [(ngModel)]="keyword" />
+            </div>
+        </div>
+    </div>
+
+    <div class="row" align="center">
+        <a [routerLink]="['/quiz-add']" class="btn btn-success">Add New</a>
+    </div>
+    <table class="table table-bordered">
+        <thead>
+            <tr class="info">
+                <td>Id</td>
+                <td>Name Quize</td>
+                <td>Show Detail</td>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- ngFor HERE to load data -->
+            <tr>
+                <td>
+                    <!-- Quiz ID HERE-->
+                </td>
+                <td>
+                    <!-- Quiz name HERE-->></td>
+                <td>
+                    <a [routerLink]="['/quiz-detail',quiz.id]">Show Detail</a>
+                    <a [routerLink]="['/quiz-edit',quiz.id]" class="btn btn-primary">Edit</a>
+                    <!-- Event DELETE this line-->
+                    <button class="btn btn-danger">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
